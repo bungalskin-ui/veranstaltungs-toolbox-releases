@@ -1,22 +1,22 @@
 {
   "name": "Veranstaltungs-Toolbox",
-  "version": "1.0.0",
-  "notes": "• Erste Version\n• Zeigt alle Programme von Norbert automatisch (AutoFOH, BeatLight, …)\n• Installieren, Öffnen und Aktualisieren mit einem Klick, „Alle aktualisieren“\n• Prüft sich selbst auf Updates",
+  "version": "1.0.1",
+  "notes": "• BeatLight lässt sich jetzt direkt in der Toolbox installieren\n• Kein unnötiges „Update“ mehr bei Apps, die sich selbst aktualisieren",
   "page": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases",
   "date": "2026-11-04",
   "assets": [
     {
       "file": "Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.0.0/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "sha256": "d99972c287cf849389c242b5786749b348ec93f9aa33ddc3049c84e65740d508",
-      "size": 581934,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.0.1/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
+      "sha256": "b9b44121c2f5541b4188d42831f62d378abf703e0502d37af16ee4724de361a9",
+      "size": 582958,
       "arch": "arm64"
     },
     {
       "file": "Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.0.0/Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "sha256": "e0370b3fb009ed2db398cc4a3ec45ad59b2b777adb9fd50007b0a092cfabc654",
-      "size": 588434,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.0.1/Veranstaltungs-Toolbox-Mac-Intel.zip",
+      "sha256": "1804bf0a987958d1e14e1a21c9240b737215dec5d131533b2422bc6fb247d9bb",
+      "size": 589064,
       "arch": "x86_64"
     }
   ]
