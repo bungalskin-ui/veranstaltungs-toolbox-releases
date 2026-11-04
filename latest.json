@@ -1,22 +1,22 @@
 {
   "name": "Veranstaltungs-Toolbox",
-  "version": "1.2.0",
-  "notes": "• Neu: Anmelden in der Toolbox, Codes einlösen und Abmelden\n• Neu: Freigeschaltete Apps installieren und Lizenz automatisch erneuern\n• Neu: Programme und Updates kommen von apps.nbskyview.com\n• Sicherer: Installiert werden nur korrekt signierte Apps",
+  "version": "1.3.0",
+  "notes": "• Neu: Animierte Icons in den Kacheln und im Dock",
   "page": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases",
   "date": "2026-11-05",
   "assets": [
     {
       "file": "Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.2.0/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "sha256": "d24632f355fb0fac3d070f78e4ce8730977a1ade6c24a092d800058fb6368d02",
-      "size": 713878,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.3.0/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
+      "sha256": "5e435fdf70b9f5a392c76cf3e336e7ca3950ea957eacf7a7be41dfaff5fa5e86",
+      "size": 732202,
       "arch": "arm64"
     },
     {
       "file": "Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.2.0/Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "sha256": "277db72e081d7385af037522f6a40b4dea0cb7ef0fac494ed4ed84993d6fa108",
-      "size": 737132,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.3.0/Veranstaltungs-Toolbox-Mac-Intel.zip",
+      "sha256": "2b10bd548cfe280bfc828e3740baa3311b607c9238e3571155c5076dfa9eefb4",
+      "size": 756692,
       "arch": "x86_64"
     }
   ]
