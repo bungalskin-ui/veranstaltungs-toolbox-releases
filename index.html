@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veranstaltungs-Toolbox – Downloads</title>
+<meta name="description" content="Alle Programme von Norbert Bungalski zum Herunterladen: Mac, Windows, Handy.">
+<style>
+  :root { --bg:#0f1020; --card:#1b1c33; --line:#2c2d4d; --text:#f1f1f7; --muted:#a3a4c2; --accent:#ff8a1f; --blue:#4f8cff; }
+  * { box-sizing: border-box; }
+  body { margin:0; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: radial-gradient(1200px 600px at 50% -200px, #33235c, var(--bg)); color: var(--text); min-height: 100vh; }
+  main { max-width: 980px; margin: 0 auto; padding: 40px 20px 60px; }
+  header { display:flex; gap:18px; align-items:center; margin-bottom: 28px; }
+  header img { width:72px; height:72px; }
+  h1 { margin:0; font-size: 30px; }
+  .sub { color: var(--muted); margin: 2px 0 0; }
+  .hero { background: var(--card); border:1px solid var(--line); border-radius: 18px; padding: 22px; margin-bottom: 28px; }
+  .hero h2 { margin: 0 0 6px; font-size: 20px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 18px; padding: 20px; display:flex; flex-direction:column; gap: 10px; }
+  .card h3 { margin:0; font-size: 21px; }
+  .ver { color: var(--muted); font-size: 13px; }
+  .desc { color: var(--muted); font-size: 15px; flex: 1; }
+  .btns { display:flex; flex-direction:column; gap: 8px; }
+  a.btn { display:block; text-align:center; text-decoration:none; padding: 11px 14px; border-radius: 12px; font-weight: 600; background: #2a2b4a; color: var(--text); border:1px solid var(--line); }
+  a.btn.main { background: var(--accent); color:#1a1000; border-color: transparent; }
+  a.btn small { display:block; font-weight: 400; font-size: 12px; opacity: .75; }
+  .note { font-size: 14px; color: var(--muted); }
+  .muted { color: var(--muted); }
+  details { background: var(--card); border:1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-top: 18px; }
+  summary { cursor: pointer; font-weight: 600; }
+  code { background:#0c0d1c; padding: 1px 6px; border-radius: 6px; }
+  footer { margin-top: 36px; color: var(--muted); font-size: 13px; text-align:center; }
+  a { color: #9bbcff; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>Veranstaltungs-Toolbox</h1>
+      <p class="sub">Alle Programme von Norbert Bungalski – kostenlos herunterladen.</p>
+    </div>
+  </header>
+
+  <section class="hero" id="hub">
+    <h2>Für den Mac: die Toolbox-App</h2>
+    <p class="note">Eine App für alles: zeigt alle Programme, installiert sie mit einem Klick und hält sie aktuell.</p>
+    <div class="btns" id="hub-btns"><span class="muted">Lade …</span></div>
+  </section>
+
+  <h2>Alle Programme</h2>
+  <p class="note" id="device-note"></p>
+  <div class="grid" id="apps"><p class="muted">Lade Programme …</p></div>
+
+  <details>
+    <summary>Mac: „App kann nicht geöffnet werden“ – was tun?</summary>
+    <p>Die Programme sind nicht bei Apple registriert (kein kostenpflichtiges Entwickler-Zertifikat), deshalb warnt macOS beim <b>ersten</b> Öffnen.</p>
+    <ol>
+      <li>Zip entpacken und die App in den Ordner <b>Programme</b> ziehen.</li>
+      <li>App öffnen → es kommt „nicht geöffnet“ → <b>Fertig</b> klicken.</li>
+      <li><b>Systemeinstellungen → Datenschutz &amp; Sicherheit</b> → ganz unten bei der App <b>„Trotzdem öffnen“</b> klicken und bestätigen.</li>
+    </ol>
+    <p>Alternativ im Terminal: <code>xattr -cr "/Applications/Veranstaltungs-Toolbox.app"</code></p>
+    <p>Programme, die du über die Toolbox-App installierst, öffnen sich ohne diese Warnung.</p>
+    <p>Welcher Mac? Apfel-Menü → „Über diesen Mac“: steht dort <i>Apple M…</i>, nimm „Apple Silicon“, bei <i>Intel</i> die Intel-Datei.</p>
+  </details>
+  <details>
+    <summary>Windows: „Der Computer wurde geschützt“</summary>
+    <p>Zip entpacken, Programm starten. Bei der blauen Meldung: <b>Weitere Informationen → Trotzdem ausführen</b>.</p>
+  </details>
+
+  <footer>Neue Programme erscheinen hier automatisch. · <a href="https://github.com/bungalskin-ui">GitHub</a></footer>
+</main>
+
+<script>
+// Liest alles live von GitHub (ohne Login): Repos „…-releases“, deren latest.json, README und neuestes Release.
+const OWNER = "bungalskin-ui", SELF = "veranstaltungs-toolbox-releases";
+const ua = navigator.userAgent;
+const device = /Android/i.test(ua) ? "android" : /iPhone|iPad|iPod/i.test(ua) ? "ios" : /Windows/i.test(ua) ? "windows" : /Mac/i.test(ua) ? "mac" : "other";
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const getJSON = async u => { try { const r = await fetch(u, {cache: "no-store"}); return r.ok ? r.json() : null; } catch { return null; } };
+const getText = async u => { try { const r = await fetch(u, {cache: "no-store"}); return r.ok ? r.text() : null; } catch { return null; } };
+
+function readme(md) {
+  if (!md) return {};
+  const lines = md.split(/\r?\n/); let title, para = [];
+  for (const raw of lines) {
+    const l = raw.trim();
+    if (!title) { if (l.startsWith("# ")) title = l.slice(2).trim(); continue; }
+    if (!l || /^(#|\||!\[|<|\[!\[)/.test(l)) { if (para.length) break; else continue; }
+    para.push(l);
+  }
+  const intro = para.join(" ").replace(/!\[[^\]]*\]\([^)]*\)/g, "").replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/\*\*|__|`/g, "");
+  return { title, intro };
+}
+
+function label(name) {
+  const n = name.toLowerCase();
+  if (/applesilicon|apple-silicon|arm64/.test(n) && /mac|darwin|\.zip|\.dmg/.test(n)) return ["mac", "Mac mit Apple-Chip (M1–M4)"];
+  if (/intel|x86_64|x64/.test(n) && /mac/.test(n)) return ["mac", "Mac mit Intel-Prozessor"];
+  if (/universal/.test(n) && /mac/.test(n)) return ["mac", "Mac (alle)"];
+  if (/win|\.exe$|\.msi$/.test(n)) return ["windows", "Windows"];
+  if (/\.apk$|android/.test(n)) return ["android", "Android"];
+  if (/\.ipa$|ios|iphone/.test(n)) return ["ios", "iPhone / iPad"];
+  if (/\.dmg$|mac/.test(n)) return ["mac", "Mac"];
+  if (/linux|\.appimage$|\.deb$/.test(n)) return ["linux", "Linux"];
+  return [null, null];
+}
+
+function fmtSize(b) { return b ? (b / 1048576).toFixed(1).replace(".", ",") + " MB" : ""; }
+
+async function loadApp(repo) {
+  const raw = `https://raw.githubusercontent.com/${OWNER}/${repo.name}/${repo.default_branch || "main"}`;
+  const [m, md, rel] = await Promise.all([
+    getJSON(`${raw}/latest.json`), getText(`${raw}/README.md`),
+    getJSON(`https://api.github.com/repos/${OWNER}/${repo.name}/releases/latest`)
+  ]);
+  const r = readme(md);
+  let files = [];
+  if (rel && rel.assets) files = rel.assets.map(a => ({ name: a.name, url: a.browser_download_url, size: a.size }));
+  else if (m && m.assets) files = m.assets.filter(a => a.url).map(a => ({ name: a.file, url: a.url, size: a.size }));
+  files = files.map(f => { const [kind, text] = label(f.name); return { ...f, kind, text }; }).filter(f => f.kind);
+  return {
+    repo: repo.name, page: (m && m.page) || repo.html_url,
+    name: (m && m.name) || r.title || repo.name.replace(/-releases$/, ""),
+    intro: r.intro || repo.description || "",
+    version: (m && m.version) || (rel && rel.tag_name && rel.tag_name.replace(/^v/, "")) || "",
+    files
+  };
+}
+
+function buttons(app, mainKind) {
+  if (!app.files.length) return `<p class="note">Download noch nicht veröffentlicht.</p><a class="btn" href="${esc(app.page)}">Seite öffnen</a>`;
+  const sorted = [...app.files].sort((a, b) => (b.kind === mainKind) - (a.kind === mainKind));
+  return sorted.map(f => `<a class="btn ${f.kind === mainKind ? "main" : ""}" href="${esc(f.url)}">⬇ ${esc(f.text)}<small>${esc(f.name)} · ${fmtSize(f.size)}</small></a>`).join("");
+}
+
+async function main() {
+  const note = document.getElementById("device-note");
+  if (device === "android" || device === "ios")
+    note.textContent = "Du bist am Handy: Die Programme laufen auf Mac oder Windows. Lade sie dort herunter – viele lassen sich danach im selben WLAN vom Handy aus bedienen.";
+  else if (device === "windows")
+    note.textContent = "Für Windows sind die passenden Dateien orange markiert.";
+
+  const repos = await getJSON(`https://api.github.com/users/${OWNER}/repos?per_page=100&type=owner`);
+  const box = document.getElementById("apps");
+  if (!repos) { box.innerHTML = `<p class="muted">GitHub ist gerade nicht erreichbar (oder das Abruflimit ist erreicht). Bitte in ein paar Minuten neu laden – oder direkt auf <a href="https://github.com/${OWNER}?tab=repositories">GitHub</a> schauen.</p>`; return; }
+  const list = repos.filter(r => r.name.endsWith("-releases") && !r.fork && !r.archived);
+  const apps = (await Promise.all(list.map(loadApp))).sort((a, b) => a.name.localeCompare(b.name, "de"));
+
+  const hub = apps.find(a => a.repo === SELF);
+  const hubBox = document.getElementById("hub-btns");
+  hubBox.innerHTML = hub ? buttons(hub, "mac").replace(/⬇ /g, "⬇ Toolbox für ") + `<p class="note">Version ${esc(hub.version)}</p>` : `<span class="muted">Noch nicht verfügbar.</span>`;
+  if (device === "windows" || device === "android" || device === "ios") document.getElementById("hub").style.display = "none";
+
+  const mainKind = device === "other" ? "mac" : device;
+  box.innerHTML = apps.filter(a => a.repo !== SELF).map(a => `
+    <article class="card">
+      <h3>${esc(a.name)}</h3>
+      <div class="ver">${a.version ? "Version " + esc(a.version) : ""}</div>
+      <div class="desc">${esc(a.intro)}</div>
+      <div class="btns">${buttons(a, mainKind)}</div>
+      <a class="note" href="${esc(a.page)}">Anleitung &amp; Infos →</a>
+    </article>`).join("") || `<p class="muted">Noch keine Programme.</p>`;
+}
+main();
+</script>
+</body>
+</html>
