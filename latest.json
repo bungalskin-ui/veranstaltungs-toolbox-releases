@@ -1,22 +1,22 @@
 {
   "name": "Veranstaltungs-Toolbox",
-  "version": "1.0.3",
-  "notes": "• Neue Versionen werden sofort erkannt\n• Downloads bleiben verfügbar, auch wenn GitHub kurz das Abruflimit erreicht",
+  "version": "1.1.0",
+  "notes": "• Von Apple geprüft: signiert und notarisiert, keine Warnung mehr beim Öffnen\n• Programme liegen immer genau einmal im Ordner „Programme“, doppelte Kopien wandern in den Papierkorb\n• Zieht beim Start selbst nach „Programme“ um",
   "page": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases",
   "date": "2026-11-04",
   "assets": [
     {
       "file": "Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.0.3/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "sha256": "af92f7e989c84105ee54b5fe4d46301e65eacf67cd5466b43666f8410ce45b59",
-      "size": 584745,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.1.0/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
+      "sha256": "4f160937fb3bc06eeeb63d829ba47e606b769805aa9b0fe5557668cc3a33fd90",
+      "size": 611579,
       "arch": "arm64"
     },
     {
       "file": "Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.0.3/Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "sha256": "d4339e8c1ae7346e917655540577c22382f45fbc9bcd5da61de4a1ad0f246b61",
-      "size": 591925,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.1.0/Veranstaltungs-Toolbox-Mac-Intel.zip",
+      "sha256": "83e6ff72ea4a85d23c522ac837f5c4fef9dabbdab6da292dea29bf927c896f28",
+      "size": 625859,
       "arch": "x86_64"
     }
   ]

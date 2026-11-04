@@ -4,7 +4,7 @@
 zeigt alle Programme (AutoFOH, BeatLight, …), installiert sie mit einem Klick, öffnet sie und hält sie aktuell.
 Neue Programme erscheinen automatisch.
 
-Aktuelle Version: **1.0.3**
+Aktuelle Version: **1.1.0**
 
 🌐 **Download-Webseite (auch für Windows & Handy):** https://bungalskin-ui.github.io/veranstaltungs-toolbox-releases/
 
@@ -22,11 +22,8 @@ Voraussetzung: macOS 14 (Sonoma) oder neuer.
 
 ## Installieren
 
-1. Zip entpacken, `Veranstaltungs-Toolbox` in den Ordner **Programme** ziehen.
-2. Beim ersten Öffnen erscheint „nicht geöffnet“ (die App ist nicht bei Apple registriert):
-   **Systemeinstellungen → Datenschutz & Sicherheit** → ganz unten **„Trotzdem öffnen“**.
-   (Alternativ im Terminal: `xattr -cr "/Applications/Veranstaltungs-Toolbox.app"`)
-3. Fertig. Alle Programme, die du über die Toolbox installierst, öffnen sich danach ohne Warnung.
+Zip öffnen, `Veranstaltungs-Toolbox` starten. Die App ist von Apple geprüft (signiert und notarisiert)
+und zieht beim ersten Start selbst in den Ordner **Programme**.
 
 ## Updates
 
