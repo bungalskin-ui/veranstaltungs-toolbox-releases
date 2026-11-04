@@ -115,7 +115,7 @@ function fmtSize(b) { return b ? (b / 1048576).toFixed(1).replace(".", ",") + " 
 async function loadApp(repo) {
   const raw = `https://raw.githubusercontent.com/${OWNER}/${repo.name}/${repo.default_branch || "main"}`;
   const [m, md, rel] = await Promise.all([
-    getJSON(`${raw}/latest.json`), getText(`${raw}/README.md`),
+    getJSON(`${raw}/latest.json?t=${Date.now()}`), getText(`${raw}/README.md?t=${Date.now()}`),
     getJSON(`https://api.github.com/repos/${OWNER}/${repo.name}/releases/latest`)
   ]);
   const r = readme(md);
