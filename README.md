@@ -4,7 +4,7 @@
 zeigt alle Programme (AutoFOH, BeatLight, …), installiert sie mit einem Klick, öffnet sie und hält sie aktuell.
 Neue Programme erscheinen automatisch.
 
-Aktuelle Version: **1.3.2**
+Aktuelle Version: **1.3.3**
 
 🌐 **Download-Webseite (auch für Windows & Handy):** https://bungalskin-ui.github.io/veranstaltungs-toolbox-releases/
 
