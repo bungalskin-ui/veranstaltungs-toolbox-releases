@@ -1,22 +1,22 @@
 {
   "name": "Veranstaltungs-Toolbox",
-  "version": "1.3.3",
-  "notes": "• Neu: Die Übersicht ist in Installiert, Verfügbar und Neue Apps gegliedert.\n• Neu: Apps lassen sich oben in ihrer Gruppe anpinnen.",
+  "version": "1.3.4",
+  "notes": "• Neu: Ruhigeres Design mit einem Akzent\n• Neu: Angepinnte Apps tragen ein Etikett",
   "page": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases",
-  "date": "2026-11-05",
+  "date": "2026-11-09",
   "assets": [
     {
       "file": "Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.3.3/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "sha256": "4d247bd2697283a57d9495327b5f5e1deb2251be9644cea9d7ce78a9362e0529",
-      "size": 753848,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.3.4/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
+      "sha256": "66c6fbbca492a2e39587fb82b53e9225848e0bb678fd6edfcd8bab139c3f555a",
+      "size": 758683,
       "arch": "arm64"
     },
     {
       "file": "Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.3.3/Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "sha256": "e1dce65ba8f9395485767a767c55c6a04d84484872a3bde1d79bb48b5a5ddd39",
-      "size": 779210,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.3.4/Veranstaltungs-Toolbox-Mac-Intel.zip",
+      "sha256": "3b095bfcddddbe4478415b7a61af2799307248bb60c76558cea2e52d7af7028c",
+      "size": 784387,
       "arch": "x86_64"
     }
   ]
