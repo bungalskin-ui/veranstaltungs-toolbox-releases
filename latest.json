@@ -1,22 +1,22 @@
 {
   "name": "Veranstaltungs-Toolbox",
-  "version": "1.3.4",
-  "notes": "• Neu: Ruhigeres Design mit einem Akzent\n• Neu: Angepinnte Apps tragen ein Etikett",
+  "version": "1.4.0",
+  "notes": "• Neu: Die Toolbox heißt jetzt Gaffabox\n• Neu: Programme und Updates kommen von gaffabox.de",
   "page": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases",
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "assets": [
     {
       "file": "Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.3.4/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "sha256": "66c6fbbca492a2e39587fb82b53e9225848e0bb678fd6edfcd8bab139c3f555a",
-      "size": 758683,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.4.0/Veranstaltungs-Toolbox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
+      "sha256": "a47a9bd32ca841315b1b7ca247433edc651e9bd082de75b2ac6745400f6dd54d",
+      "size": 760542,
       "arch": "arm64"
     },
     {
       "file": "Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.3.4/Veranstaltungs-Toolbox-Mac-Intel.zip",
-      "sha256": "3b095bfcddddbe4478415b7a61af2799307248bb60c76558cea2e52d7af7028c",
-      "size": 784387,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.4.0/Veranstaltungs-Toolbox-Mac-Intel.zip",
+      "sha256": "41e8f337a665900526c68dcee644091b4ed465d6f8216db09cc1cf7d0b9c746f",
+      "size": 786335,
       "arch": "x86_64"
     }
   ]
