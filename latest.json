@@ -1,22 +1,22 @@
 {
   "name": "Gaffabox",
-  "version": "1.5.0",
-  "notes": "• Neu: Die Toolbox heißt jetzt ganz Gaffabox, auch im Programme-Ordner\n• Neu: Eigenes Icon mit Gaffa-Rolle\n• Neu: Der Schriftzug steht auf einem Gaffa-Streifen",
+  "version": "1.5.1",
+  "notes": "• Neu: Ruhige Standbild-Icons, keine Animation mehr",
   "page": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases",
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "assets": [
     {
       "file": "Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.5.0/Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "sha256": "1fcbff735b912a7045294f297884d2fdbc88230c015d8387cd2f43534254ad04",
-      "size": 877982,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.5.1/Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
+      "sha256": "cd3595d174c2f3480e431bd71f80e444f9bc6728350988c446de1a87d996ade6",
+      "size": 705558,
       "arch": "arm64"
     },
     {
       "file": "Gaffabox-Mac-Intel.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.5.0/Gaffabox-Mac-Intel.zip",
-      "sha256": "cb409c49e6ca3551716b97ab0cc40ca11d6949a9b270ee35ac3b3e3ae9d4e565",
-      "size": 906891,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.5.1/Gaffabox-Mac-Intel.zip",
+      "sha256": "ff7f7ff77c8be2c8cb5fe8e57d51748c6acd8d03774c6425a65ad064cf5d226c",
+      "size": 730535,
       "arch": "x86_64"
     }
   ]
