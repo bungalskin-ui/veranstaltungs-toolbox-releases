@@ -1,22 +1,22 @@
 {
   "name": "Gaffabox",
-  "version": "1.6.0",
-  "notes": "• Neu: Freischaltungen werden still im Hintergrund verlängert (alle 6 Stunden, ohne Fenster)\n• Besser: Tickets bleiben bei Wartung oder ohne Netz erhalten\n• Besser: Laufende Apps werden beim Aktualisieren nicht mehr ungefragt beendet",
+  "version": "1.6.1",
+  "notes": "• Besser: Das Verlängern im Hintergrund wird jetzt zuverlässig eingeschaltet (alle 6 Stunden, auch wenn die Gaffabox geschlossen ist)",
   "page": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases",
   "date": "2026-11-24",
   "assets": [
     {
       "file": "Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.6.0/Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "sha256": "afc1934505eefc8b41dbdf2b88d18131450a1349ecbeff20d270ed428e3f3ef5",
-      "size": 742239,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.6.1/Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
+      "sha256": "1d668409ec9cf78df9ad368a764a079b3ddb84fee9efdec68207ca6082852722",
+      "size": 742245,
       "arch": "arm64"
     },
     {
       "file": "Gaffabox-Mac-Intel.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.6.0/Gaffabox-Mac-Intel.zip",
-      "sha256": "9e3c718af39df2739a23b798de4407707c250eed039f52fffedb67e8b5efd6ed",
-      "size": 771571,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.6.1/Gaffabox-Mac-Intel.zip",
+      "sha256": "8940c0764c908cd3a1fdaa00225aac87ac68aa495eaf2cf61c9aeb1510ee2948",
+      "size": 771510,
       "arch": "x86_64"
     }
   ]
