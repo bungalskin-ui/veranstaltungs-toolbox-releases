@@ -1,22 +1,22 @@
 {
   "name": "Gaffabox",
-  "version": "1.6.1",
-  "notes": "• Besser: Das Verlängern im Hintergrund wird jetzt zuverlässig eingeschaltet (alle 6 Stunden, auch wenn die Gaffabox geschlossen ist)",
+  "version": "1.6.2",
+  "notes": "• Icons der neuen Apps (vom Server, auch für künftige Apps)\n• Abgemeldet steht jetzt „Anmelden, um Updates zu prüfen“ statt „Alles aktuell“\n• Kleinere Verbesserungen",
   "page": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases",
-  "date": "2026-11-24",
+  "date": "2026-11-26",
   "assets": [
     {
       "file": "Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.6.1/Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
-      "sha256": "1d668409ec9cf78df9ad368a764a079b3ddb84fee9efdec68207ca6082852722",
-      "size": 742245,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.6.2/Gaffabox-Mac-AppleSilicon-M1-M2-M3-M4.zip",
+      "sha256": "85e8c0c7d8cbb71b66b60e9ae5a4d4dcf41dcde13dab5cba961dc98109e175d7",
+      "size": 761748,
       "arch": "arm64"
     },
     {
       "file": "Gaffabox-Mac-Intel.zip",
-      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.6.1/Gaffabox-Mac-Intel.zip",
-      "sha256": "8940c0764c908cd3a1fdaa00225aac87ac68aa495eaf2cf61c9aeb1510ee2948",
-      "size": 771510,
+      "url": "https://github.com/bungalskin-ui/veranstaltungs-toolbox-releases/releases/download/v1.6.2/Gaffabox-Mac-Intel.zip",
+      "sha256": "3540289c7344b68f4f3d172e90fcdc3613a41be7d89b29d826b2ba452a9322cc",
+      "size": 793322,
       "arch": "x86_64"
     }
   ]
